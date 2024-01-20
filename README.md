@@ -70,6 +70,15 @@ Um objeto EntityManagerFactory é utilizado para instanciar objetos EntityManage
 
 Escopo: tipicamente mantem-se uma instância única de EntityManagerFactory para toda aplicação.
 
+### Dúvidas: 
+1) Por que é considerado um padrã e não um framewrok ?
+A JPA é considerada uma especificação ou padrão e não um framework porque ela define uma série de interfaces e regras que as implementações devem seguir, mas não fornece uma implementação específica por si só. O objetivo é estabelecer uma padronização na forma como os desenvolvedores interagem com sistemas de persistência de dados em Java, sem impor uma implementação específica.
+
+Diversos frameworks de persistência, como Hibernate, EclipseLink e Apache OpenJPA, implementam as especificações da JPA. Essas implementações concretas fornecem as funcionalidades reais para persistência de dados e seguem as diretrizes definidas pela JPA.
+
+2) O que significa a frase: " O objeto entity manager encapsula uma conexão com a base de dados" ?
+Significa que o EntityManager fornece uma camada de abstração que permite à aplicação interagir com o banco de dados sem precisar se preocupar com os detalhes específicos da conexão.
+
 ## Criando uma aplicação simples
 
 ![myImage](https://github.com/devsuperior/aulao006/raw/master/img-pessoa.png)
