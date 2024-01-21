@@ -171,6 +171,16 @@ public class Programa {
 }
 ```
 
+### Dúvidas: 
+1) Pra que serve o implements Serializable ?
+A interface Serializable em Java é marcadora (marker interface), o que significa que ela não contém métodos a serem implementados. Em vez disso, serve como um indicador para o mecanismo de serialização em Java, indicando que a classe que a implementa pode ser serializada.
+
+A serialização é o processo de converter o estado de um objeto em uma sequência de bytes, que pode ser posteriormente revertida para recriar o objeto original. Isso é útil em várias situações, como quando você deseja salvar o estado de um objeto em um arquivo ou transmiti-lo pela rede.
+
+A implementação da interface Serializable informa ao Java que é seguro serializar instâncias dessa classe. Isso significa que os objetos dessa classe podem ser convertidos em bytes e, em seguida, reconvertidos de volta para objetos sem perder a integridade dos dados.
+
+Aqui está um exemplo de uma classe simples que implementa a interface Serializable:
+
 #### Atualize o Maven do projeto para Java 11
 - Edite o arquivo pom.xml
 - Inclua o conteúdo abaixo
